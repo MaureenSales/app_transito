@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionarios de Seguridad Vial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚗 Seguridad Vial Cuba</h1>
+            <p>Sistema de Cuestionarios Automatizados</p>
+        </div>
+        
+        <div class="content">
+            <div id="menu" class="quiz-menu">
+                <div class="quiz-type">
+                    <button class="quiz-btn" id="tf-btn">
+                        📋 Verdadero/Falso
+                    </button>
+                    <button class="quiz-btn" id="mc-btn">
+                        ✅ Selección Múltiple
+                    </button>
+                </div>
+            </div>
+            
+            <div id="quiz-container" class="question-container">
+                <div class="question" id="question"></div>
+                <div class="controls">
+                    <div class="score" id="score">Puntuación: 0/0</div>
+                    <div>
+                        <button class="btn btn-secondary" id="next-btn">Siguiente</button>
+                        <button class="btn btn-primary" id="menu-btn">Menú</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
